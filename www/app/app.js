@@ -34,3 +34,21 @@
             });
     }
 })*/
+
+/*
+
+$scope.login = function(){
+
+    console.log('login user : ' + JSON.stringify($scope.loginUser));
+    //try to make request to login
+    var url = baseUrl + 'rest/login';
+    $http.post(
+        url,{"email":"profschingalo@gmail.com", "password":"chingalo"},{}).then(function(data){
+            console.log(JSON.stringify(data));
+
+        },function(error){
+            console.log(JSON.stringify(error))
+        });
+
+
+}*/
