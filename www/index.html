@@ -28,10 +28,17 @@
         <title>Hello World</title>
     </head>
     <body ng-app="blogSample" ng-controller="mainController">
-    <p class="text-center"> Your location is: <br/>
-        Latitude: {{latitude}}<br/>
-        Longitude: {{longitude}} <br/>
-    </p>
+
+    <b>My geolocation:</b> <br />
+    Latitude: {{position.coords.latitude}} <br />
+    Longitude: {{position.coords.longitude}} <br />
+    Altitude: {{position.coords.altitude}} <br />
+    Accuracy: {{position.coords.accuracy}} <br />
+    Altitude Accuracy: {{position.coords.altitudeAccuracy}} <br />
+    Heading: {{position.coords.heading}} <br />
+    Speed: {{position.coords.speed}} <br />
+    Timestamp: {{position.timestamp}} <br />
+
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/bower_components/angular/angular.min.js"></script>
