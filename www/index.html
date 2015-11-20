@@ -29,7 +29,9 @@
     </head>
     <body ng-app="blogSample" ng-controller="mainController">
 
-    <button ng-click="getMyLocation()">Get My location</button>
+    <button ng-click="getMyLocation()" style = "padding: 3%;margin: 1%;">Get My location</button>
+    <button ng-click="takePhoto()" style = "padding: 3%;margin: 1%;">Take Photo</button>
+    <button ng-click="takeVideo()" style = "padding: 3%;margin: 1%;">Take Video</button>
 
     <div style = "margin:10px" ng-if = "location">
         <b>My geolocation:</b> <br />
@@ -46,6 +48,7 @@
 
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="json2.js"></script>
     <script type="text/javascript" src="js/bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="js/bower_components/angular/angular-route.min.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
