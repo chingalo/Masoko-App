@@ -8,6 +8,7 @@
         Joseph Chingalo
     </author>
     <content src="index.html" />
+    <platform name="ios|winphone|wp8|android" />
 
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />

@@ -4,7 +4,7 @@ angular.module('blogSample',[])
         var onSuccess = function(position) {
             $rootScope.$apply(function() {
                 $scope.position = position;
-                alert(JSON.stringify(position));
+                $scope.location = false;
             });
         };
         var onError = function(error) {
@@ -12,7 +12,7 @@ angular.module('blogSample',[])
         };
 
         $scope.getMyLocation = function(){
-            $scope.location = true;
+            $scope.location = false;
             navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 10000, enableHighAccuracy: true});
         }
 
@@ -23,7 +23,7 @@ angular.module('blogSample',[])
             for (i = 0, len = mediaFiles.length; i < len; i += 1) {
                 //uploadFile(mediaFiles[i]);
                 path = mediaFiles[i].fullPath;
-                alert(JSON.stringify(path));
+                $scope.media.data = mediaFiles[i].fullPath;
             }
         }
 
@@ -34,14 +34,20 @@ angular.module('blogSample',[])
             navigator.notification.alert(msg, null, 'Uh oh!');
         }
 
+        $scope.media = {
+            type : '',
+            data : ''
+        }
         $scope.takeVideo = function(){
 
-            navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 2});
+            $scope.media.type = 'video';
+            navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
         }
 
         $scope.takePhoto = function (){
 
-            navigator.device.capture.captureImage(captureSuccess, captureError, {limit: 2});
+            $scope.media.type = 'photo';
+            navigator.device.capture.captureImage(captureSuccess, captureError, {limit: 1});
         }
 
 
