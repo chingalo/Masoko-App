@@ -23,7 +23,7 @@ angular.module('blogSample',[])
             for (i = 0, len = mediaFiles.length; i < len; i += 1) {
                 //uploadFile(mediaFiles[i]);
                 path = mediaFiles[i].fullPath;
-                $scope.media.data = mediaFiles[i].fullPath;
+                $scope.media.data = JSON.stringify(mediaFiles[i].fullPath);
             }
         }
 

@@ -45,6 +45,8 @@
         Timestamp: {{position.timestamp}} <br />
     </div>
 
+    {{ media|json}}
+
     <div ng-if = "media.type == 'photo'">
         <img ng-src="{{media.data}}">
     </div>
