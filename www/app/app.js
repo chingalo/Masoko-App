@@ -1,5 +1,9 @@
 angular.module('blogSample',[])
     .controller('mainController', function ($scope, $rootScope) {
+        $scope.media = {
+            type : '',
+            data : ''
+        }
         $scope.location = false;
         var onSuccess = function(position) {
             $rootScope.$apply(function() {
@@ -24,6 +28,7 @@ angular.module('blogSample',[])
                 //uploadFile(mediaFiles[i]);
                 path = mediaFiles[i].fullPath;
                 $scope.media.data = mediaFiles[i].fullPath;
+                $scope.$apply();
             }
         }
 
@@ -34,10 +39,7 @@ angular.module('blogSample',[])
             navigator.notification.alert(msg, null, 'Uh oh!');
         }
 
-        $scope.media = {
-            type : '',
-            data : ''
-        }
+
         $scope.takeVideo = function(){
 
             $scope.media.type = 'video';
