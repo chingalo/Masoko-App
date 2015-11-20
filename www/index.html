@@ -45,6 +45,15 @@
         Timestamp: {{position.timestamp}} <br />
     </div>
 
+    <div ng-if = "media.type == 'photo'">
+        <img ng-src="{{media.data}}">
+    </div>
+    <div ng-if = "media.type == 'video'">
+        <video width="320" height="240" controls  >
+            <source ng-src="{{media.data}}" >
+        </video>
+    </div>
+
 
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>

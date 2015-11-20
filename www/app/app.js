@@ -4,7 +4,7 @@ angular.module('blogSample',[])
         var onSuccess = function(position) {
             $rootScope.$apply(function() {
                 $scope.position = position;
-                $scope.location = false;
+                $scope.location = true;
             });
         };
         var onError = function(error) {
@@ -40,12 +40,14 @@ angular.module('blogSample',[])
         }
         $scope.takeVideo = function(){
 
+            $scope.location = false;
             $scope.media.type = 'video';
             navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
         }
 
         $scope.takePhoto = function (){
 
+            $scope.location = false;
             $scope.media.type = 'photo';
             navigator.device.capture.captureImage(captureSuccess, captureError, {limit: 1});
         }
