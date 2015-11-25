@@ -8,7 +8,7 @@
         Joseph Chingalo
     </author>
     <content src="index.html" />
-    <platform name="ios|winphone|wp8|android" />
+    <!--<platform name="ios|winphone|wp8|android" />-->
 
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
@@ -26,23 +26,23 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
 
-    <gap:plugin name="org.apache.cordova.battery-status" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.camera" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.media-capture" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.console" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.contacts" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.device" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.device-motion" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.device-orientation" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.dialogs" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.file" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.file-transfer" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.geolocation" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.inappbrowser" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.media" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.network-information" source = "npm" />
-    <gap:plugin name="org.apache.cordova.splashscreen" source = "npm" />
-    <gap:plugin name="org.apache.cordova.vibration" source = "npm"/>
+    <!--<gap:plugin name="org.apache.cordova.battery-status" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.camera" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.media-capture" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.console" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.contacts" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.device" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.device-motion" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.device-orientation" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.dialogs" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.file" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.file-transfer" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.geolocation" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.inappbrowser" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.media" source = "npm"/>-->
+    <!--<gap:plugin name="org.apache.cordova.network-information" source = "npm" />-->
+    <!--<gap:plugin name="org.apache.cordova.splashscreen" source = "npm" />-->
+    <!--<gap:plugin name="org.apache.cordova.vibration" source = "npm"/>-->
 
     <!--<gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin" />-->
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="~1" />
