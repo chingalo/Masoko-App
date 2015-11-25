@@ -26,23 +26,23 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
 
-    <gap:plugin name="org.apache.cordova.battery-status" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.camera" source = "npm"/>
-    <!--<gap:plugin name="org.apache.cordova.media-capture" source = "npm"/>-->
-    <gap:plugin name="org.apache.cordova.console" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.contacts" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.device" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.device-motion" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.device-orientation" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.dialogs" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.file" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.file-transfer" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.geolocation" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.inappbrowser" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.media" source = "npm"/>
-    <gap:plugin name="org.apache.cordova.network-information" source = "npm" />
-    <gap:plugin name="org.apache.cordova.splashscreen" source = "npm" />
-    <gap:plugin name="org.apache.cordova.vibration" source = "npm"/>
+    <gap:plugin name="org.apache.cordova.battery-status" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.camera" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.media-capture" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.console" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.contacts" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.device" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.device-motion" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.device-orientation" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.dialogs" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.file" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.file-transfer" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.geolocation" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.inappbrowser" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.media" source = "pgb"/>
+    <gap:plugin name="org.apache.cordova.network-information" source = "pgb" />
+    <gap:plugin name="org.apache.cordova.splashscreen" source = "pgb" />
+    <gap:plugin name="org.apache.cordova.vibration" source = "pgb"/>
 
     <!--<gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin" />-->
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="~1" />
