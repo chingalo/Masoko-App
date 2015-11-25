@@ -56,12 +56,21 @@
         </video>
     </div>
 
+    <div>
+        <select class="" ng-model="select.value1" material-select watch>
+            <option value="">Choose</option>
+            <option ng-repeat="value in select.choices">{{value}}</option>
+        </select>
+    </div>
+
 
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="json2.js"></script>
     <script type="text/javascript" src="js/bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="js/bower_components/angular/angular-route.min.js"></script>
+
+    <script type="text/javascript" src = "js/bower_components/angular-materialize/angular-materialize.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
     <script type="text/javascript">
         app.initialize();

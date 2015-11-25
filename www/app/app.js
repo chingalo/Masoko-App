@@ -1,5 +1,12 @@
-angular.module('blogSample',[])
+angular.module('blogSample',['ui.materialize'])
     .controller('mainController', function ($scope, $rootScope) {
+
+        $scope.select = {
+            value1: "Option1",
+            value2: "I'm an option",
+            choices: ["Option1", "I'm an option", "This is materialize", "No, this is Patrick."]
+        };
+
         $scope.location = false;
         var onSuccess = function(position) {
             $rootScope.$apply(function() {
