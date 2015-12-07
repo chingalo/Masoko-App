@@ -27,9 +27,13 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
     </head>
-    <body ng-app="blogSample" ng-controller="mainController">
+    <body ng-app="app" ng-controller="mainController">
+    <button ng-click="save()">Save</button>
+    <button ng-click="load()">Load</button>
+    <br>
+    {{data}}
 
-    <button ng-click="getMyLocation()" style = "padding: 3%;margin: 1%;">Get My location</button>
+    <!--<button ng-click="getMyLocation()" style = "padding: 3%;margin: 1%;">Get My location</button>
     <button ng-click="takePhoto()" style = "padding: 3%;margin: 1%;">Take Photo</button>
     <button ng-click="takeVideo()" style = "padding: 3%;margin: 1%;">Take Video</button>
 
@@ -61,7 +65,7 @@
             <option value="">Choose</option>
             <option ng-repeat="value in select.choices">{{value}}</option>
         </select>
-    </div>
+    </div>-->
 
 
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -69,6 +73,7 @@
     <script type="text/javascript" charset="utf-8" src="json2.js"></script>
     <script type="text/javascript" src="js/bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="js/bower_components/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/ngStorage.js"></script>
 
     <script type="text/javascript" src = "js/bower_components/angular-materialize/angular-materialize.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
