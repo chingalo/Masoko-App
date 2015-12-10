@@ -21,10 +21,10 @@ angular.module('app',['ngStorage','ngCordova'])
 
             cordova.plugins.barcodeScanner.scan(
                 function (result) {
-                    alert(result);
+                    alert('Data : ' + JSON.stringify(result));
                 },
                 function (error) {
-                    alert("Scanning failed: " + error);
+                    alert("Scanning failed: " + JSON.stringify(error));
                 }
             );
         }
