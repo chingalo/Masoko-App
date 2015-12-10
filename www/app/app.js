@@ -11,6 +11,12 @@ angular.module('app',['ngStorage'])
                     alert("Scanning failed: " + JSON.stringify(error));
                 }
             );
+            cordova.plugins.barcodeScanner.encode(cordova.plugins.barcodeScanner.Encode.TEXT_TYPE, "http://www.nytimes.com", function(success) {
+                    alert("encode success: " + JSON.stringify(success));
+                }, function(fail) {
+                    alert("encoding failed: " + JSON.stringify(fail));
+                }
+            );
         }
 
         $scope.save = function() {
