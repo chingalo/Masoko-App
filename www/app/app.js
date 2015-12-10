@@ -1,7 +1,7 @@
 angular.module('app',['ngStorage','ngCordova'])
     .controller('mainController',function($scope,$localStorage,$cordovaBarcodeScanner){
 
-        $scope.barcode = function(){
+        /*$scope.barcode = function(){
             alert('inside btn');
             document.addEventListener("deviceready", function () {
                 $cordovaBarcodeScanner.scan()
@@ -16,7 +16,21 @@ angular.module('app',['ngStorage','ngCordova'])
                     });
                 alert('after scan')
             }, false);
-        };
+        };*/
+        $scope.barcode = function(){
+
+            cordova.plugins.barcodeScanner.scan(
+                function (result) {
+                    alert("We got a barcode\n" +
+                    "Result: " + result.text + "\n" +
+                    "Format: " + result.format + "\n" +
+                    "Cancelled: " + result.cancelled);
+                },
+                function (error) {
+                    alert("Scanning failed: " + error);
+                }
+            );
+        }
 
         $scope.save = function() {
             $localStorage.myArray = [

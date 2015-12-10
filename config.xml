@@ -43,6 +43,7 @@
     <gap:plugin name="org.apache.cordova.network-information" source = "pgb" />
     <gap:plugin name="org.apache.cordova.splashscreen" source = "pgb" />
     <gap:plugin name="org.apache.cordova.vibration" source = "pgb"/>
+    <plugin name="com.phonegap.plugins.barcodescanner" spec="2.0.0" source="pgb" />
 
     <!--<gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin" />-->
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="~1" />
