@@ -1,5 +1,5 @@
 angular.module('app',['ngStorage','ngCordova'])
-    .controller('mainController',function($scope,$localStorage,$cordovaBarcodeScanner){
+    .controller('mainController',function($scope,$localStorage){
 
         /*$scope.barcode = function(){
             alert('inside btn');
