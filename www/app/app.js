@@ -1,5 +1,20 @@
-angular.module('app',['ngStorage'])
-    .controller('mainController',function($scope,$localStorage){
+angular.module('app',['ngStorage','ngCordova'])
+    .controller('mainController',function($scope,$localStorage,$cordovaBarcodeScanner){
+
+        $scope.barcode = function(){
+
+            $cordovaBarcodeScanner.scan()
+                .then(function(barcodeData) {
+
+                    alert('success');
+                   alert(barcodeData);
+                }, function(error) {
+
+                    alert('error');
+                    alert(JSON.stringify(error));
+                });
+        };
+
         $scope.save = function() {
             $localStorage.myArray = [
                 {
@@ -11,7 +26,7 @@ angular.module('app',['ngStorage'])
                     website: "http://www.mraboy.com"
                 }
             ]
-        }
+        };
 
         $scope.load = function() {
             if($localStorage.myArray){
