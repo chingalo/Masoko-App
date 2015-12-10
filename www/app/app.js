@@ -1,22 +1,6 @@
-angular.module('app',['ngStorage','ngCordova'])
+angular.module('app',['ngStorage'])
     .controller('mainController',function($scope,$localStorage){
 
-        /*$scope.barcode = function(){
-            alert('inside btn');
-            document.addEventListener("deviceready", function () {
-                $cordovaBarcodeScanner.scan()
-                    .then(function(barcodeData) {
-
-                        alert('success');
-                        alert(barcodeData);
-                    }, function(error) {
-
-                        alert('error');
-                        alert(JSON.stringify(error));
-                    });
-                alert('after scan')
-            }, false);
-        };*/
         $scope.barcode = function(){
 
             cordova.plugins.barcodeScanner.scan(
