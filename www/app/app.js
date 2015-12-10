@@ -2,17 +2,20 @@ angular.module('app',['ngStorage','ngCordova'])
     .controller('mainController',function($scope,$localStorage,$cordovaBarcodeScanner){
 
         $scope.barcode = function(){
+            alert('inside btn');
+            document.addEventListener("deviceready", function () {
+                $cordovaBarcodeScanner.scan()
+                    .then(function(barcodeData) {
 
-            $cordovaBarcodeScanner.scan()
-                .then(function(barcodeData) {
+                        alert('success');
+                        alert(barcodeData);
+                    }, function(error) {
 
-                    alert('success');
-                   alert(barcodeData);
-                }, function(error) {
-
-                    alert('error');
-                    alert(JSON.stringify(error));
-                });
+                        alert('error');
+                        alert(JSON.stringify(error));
+                    });
+                alert('after scan')
+            }, false);
         };
 
         $scope.save = function() {
