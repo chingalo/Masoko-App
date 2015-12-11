@@ -17,6 +17,20 @@
 
     <p>local storage : {{data}}</p>
 
+    <div ng-controller="SignatureCtrl">
+       <div>
+           <canvas id='signatureCanvas' width='250' height='250' style='border: 1px solid black;'></canvas>
+       </div>
+
+        <div>
+            <button style = "padding: 3%;margin: 1%;" ng-click='clearCanvas()'>Clear Drawing</button>
+            <button style = "padding: 3%;margin: 1%;" ng-click='saveCanvas()'>Drawing Save</button>
+        </div>
+
+        <br>
+        <img ng-src='{{signature}}'/>
+    </div>
+
     <!--<button ng-click="getMyLocation()" style = "padding: 3%;margin: 1%;">Get My location</button>
     <button ng-click="takePhoto()" style = "padding: 3%;margin: 1%;">Take Photo</button>
     <button ng-click="takeVideo()" style = "padding: 3%;margin: 1%;">Take Video</button>
@@ -57,7 +71,7 @@
     <script type="text/javascript" src="js/bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="js/bower_components/angular/angular-route.min.js"></script>
     <script type="text/javascript" src="js/ngStorage.js"></script>
-
+    <script type="text/javascript" src="js/bower_components/signature_pad/signature_pad.js"></script>
     <script type="text/javascript" src = "js/bower_components/angular-materialize/angular-materialize.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
 
@@ -66,6 +80,7 @@
 
     <script type="text/javascript">
         app.initialize();
+
     </script>
     </body>
 </html>
