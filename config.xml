@@ -20,8 +20,8 @@
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
+    <!--<preference name="show-splash-screen-spinner" value="true" />-->
+    <!--<preference name="auto-hide-splash-screen" value="true" />-->
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
@@ -43,6 +43,14 @@
     <gap:plugin name="org.apache.cordova.network-information" source = "pgb" />
     <gap:plugin name="org.apache.cordova.splashscreen" source = "pgb" />
     <gap:plugin name="org.apache.cordova.vibration" source = "pgb"/>
+
+    <!-- third party plugin -->
+    <gap:plugin name="org.apache.cordova.splashscreen" source = "pgb" />
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="SplashScreenDelay" value="10000" />
+    <gap:splash src="liquid-water.jpg" />
+
+
     <plugin name="com.phonegap.plugins.barcodescanner" spec="2.0.0" source="pgb" />
 
     <!--<gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin" />-->
