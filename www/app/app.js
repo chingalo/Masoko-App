@@ -10,7 +10,6 @@ angular.module('app',['ngStorage'])
         $scope.saveCanvas = function() {
             var sigImg = signaturePad.toDataURL();
             $scope.signature = sigImg;
-            window.open(signaturePad.toDataURL());
         }
     })
     .controller('mainController',function($scope,$localStorage){
