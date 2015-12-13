@@ -1,4 +1,4 @@
-angular.module('app',['ngStorage'])
+angular.module('app',['ngStorage','mdDateTime'])
     .controller('SignatureCtrl', function($scope) {
         var canvas = document.getElementById('signatureCanvas');
         var signaturePad = new SignaturePad(canvas);
@@ -13,7 +13,7 @@ angular.module('app',['ngStorage'])
         }
     })
     .controller('mainController',function($scope,$localStorage){
-
+        $scope.dateValue = null;
         $scope.barcode = function(){
 
             cordova.plugins.barcodeScanner.scan(

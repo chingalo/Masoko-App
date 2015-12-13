@@ -7,6 +7,11 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+
+        <link rel='stylesheet' href='js/bower_components/md-date-time/dist/md-date-time.css'>
+
+
         <title>Hello World</title>
     </head>
     <body ng-app="app" ng-controller="mainController" style="margin: 2%;font-size: 14px;">
@@ -14,6 +19,9 @@
     <button style = "padding: 3%;margin: 1%;" ng-click="load()">Load</button>
     <button style = "padding: 3%;margin: 1%;" ng-click="barcode()">Barcode</button>
     <br>
+
+    <time-date-picker ng-model="dateValue"></time-date-picker>
+    {{ dateValue }}
 
     <p>local storage : {{data}}</p>
 
@@ -74,6 +82,7 @@
     <script type="text/javascript" src="js/bower_components/signature_pad/signature_pad.js"></script>
     <script type="text/javascript" src = "js/bower_components/angular-materialize/angular-materialize.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
+    <script src='js/bower_components/md-date-time/dist/md-date-time.js'></script>
 
     <!--ngCordova and cordova pligin support-->
     <script type="text/javascript" src="cordova.js"></script>
