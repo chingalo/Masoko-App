@@ -9,6 +9,7 @@ angular.module('app',['ngStorage','mdDateTime'])
 
         $scope.saveCanvas = function() {
             var sigImg = signaturePad.toDataURL();
+            console.log(JSON.stringify(sigImg));
             $scope.signature = sigImg;
         }
     })
